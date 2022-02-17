@@ -1,0 +1,10 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+footer {
+    padding: em(30);
+    border-top: 1px dotted $body-bg-color;
+    p {
+        @include flatten;
+    }
+}

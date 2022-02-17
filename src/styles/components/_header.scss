@@ -1,0 +1,23 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+header {
+    background-color: $brand-color;
+    padding: em(15) em(30);
+    @include flex-layout-row;
+    align-items: center;
+
+    h1 {
+        @include flatten;
+        color: $text-color-light;
+        font-size: em(26);
+        @include mq($phoneLandscape){
+            font-size: em(32);
+        }
+    }
+
+    a {
+        @include plain-link;
+    }
+
+}

@@ -1,0 +1,8 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.wrapper {
+    max-width: 860px;
+    @include mc;
+    background-color: $wrapper-bg-color;
+}

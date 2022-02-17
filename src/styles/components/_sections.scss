@@ -1,0 +1,74 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.info {
+    
+    @include first-last-el-no-margin;
+
+    .some-row {
+        :last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .a-01,
+    .a-02 {
+        padding: em(30);
+        @include first-last-el-no-margin;
+        border: 1px dotted #ccc;
+        margin-bottom: em(20);
+    }
+
+    @include mq($phoneLandscape){
+        .some-row {
+            @include flex-layout-row;
+            gap: em(20);
+        }
+        .a-01,
+        .a-02 {
+            flex: 1;
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+// More Stuff section
+// Just practice @extend
+.more-stuff {
+    
+    background-color: rgba(pink, 0.3);
+    padding: em(30);
+    @include first-el-no-margin;
+    
+    .different-row {
+
+        :last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .a-03,
+    .a-04,
+    .a-05,
+    .a-06 {
+        padding: em(20);
+        background-color: lightyellow;
+        margin-bottom: em(20);
+        @include first-last-el-no-margin;
+    }
+
+    @include mq($phoneLandscape){
+        .different-row {
+            @include grid;
+            gap: em(20);
+        }
+        .a-03,
+        .a-04,
+        .a-05,
+        .a-06 {
+            margin-bottom: 0;
+        }
+    }
+
+}

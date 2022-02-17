@@ -1,0 +1,18 @@
+// Typography Styles
+@use "../utilities/variables" as *;
+
+body {
+    font-family: $body-font;
+    line-height: $line-height;
+}
+
+h1, h2, h3, h4, h5, nav a, th, caption {
+    font-family: $heading-font;
+    font-weight: $heading-font-weight;
+}
+
+table,
+footer p {
+    font-family: $heading-font;
+    font-weight: 300;
+}

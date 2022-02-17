@@ -1,0 +1,62 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+nav {
+    // locally scoped variable
+    $height: 40px;
+    $border: 1px solid white;
+    
+    background-color: $brand-color-dark;
+    display: none;
+
+    .show & {
+        display: block;
+    }
+
+    ul {
+        @include flatten(true);
+    }
+
+    a {
+        display: block;
+        line-height: 50px;
+        border-top: $border;
+        color: $text-color-light;
+        line-height: $height;
+        text-align: center;
+        font-size: 1.2em;
+        text-decoration: none;
+        outline: none;
+        
+        #{$lps} {
+            background-color: rgba(white, 0.3);
+        }
+
+    }
+
+    @include mq($phoneLandscape) {
+    
+        display: block;
+        height: $height;
+        border-top: $border;
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            flex: 1;
+        }
+
+        a {
+            line-height: $height;
+            border-right: $border;
+            border-top: $border;
+            @at-root nav li:last-child a {
+                border-right: none;
+            }
+        }
+        
+    }
+
+}

@@ -2,12 +2,14 @@
 @use '../utilities/mixins' as *;
 
 header {
-    background-color: $brand-color;
+    background-color: rgb(104, 104, 104);
     padding: em(8) em(15);
     @include flex-layout-row;
     align-items: center;
-    z-index: 30;
-    opacity: .5;
+    position: absolute;
+    background-color: rgba(112, 112, 112, 0.5);;
+    z-index: 40;
+    width: 100vw;
 
     h1 {
         @include flatten;

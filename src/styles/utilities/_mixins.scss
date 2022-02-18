@@ -62,6 +62,11 @@
         margin-bottom: 0;
     }
 }
+@mixin first-el-no-margin {
+    :first-child {
+        margin-bottom: 0;
+    }
+}
 
 // Mixin for setting foreground
 // images to cover their container

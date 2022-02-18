@@ -25,16 +25,16 @@ function HeaderSlider() {
           <div className="text-container">
             <h2>We design and fabricate indestructible wastewater screens.</h2>
             <h2>Enough said.</h2>
-            <a>VIEW PRODUCTS</a>
-            <a>VIEW SERVICES</a>
+            <a href="/">VIEW PRODUCTS</a>
+            <a href="/">VIEW SERVICES</a>
           </div>
         </div>
         <div className="image-container">
           <img src={slider02} alt="" />
           <div className="text-container">
             <h2>We design and fabricate indestructible wastewater screens.Enough said.</h2>
-            <a>VIEW PRODUCTS</a>
-            <a>VIEW SERVICES</a>
+            <a href="/">VIEW PRODUCTS</a>
+            <a href="/">VIEW SERVICES</a>
           </div>
         </div>
         <div className="image-container">
@@ -42,8 +42,8 @@ function HeaderSlider() {
           <div className="text-container">
             <h2>We design and fabricate indestructible wastewater screens.</h2>
             <h2>Enough said.</h2>
-            <a>VIEW PRODUCTS</a>
-            <a>VIEW SERVICES</a>
+            <a href="/">VIEW PRODUCTS</a>
+            <a href="/">VIEW SERVICES</a>
           </div>
         </div>
       </Slider>

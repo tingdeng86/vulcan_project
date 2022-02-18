@@ -1,0 +1,27 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+.slider-container{
+    padding: 0;
+    position: relative;
+    .slick-dots{
+        position: absolute;
+        bottom: em(30);
+        display: block;
+        width: 100%;
+        padding: 10;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        li button:before{
+            color: white;
+            font-size:15px;
+            opacity: 1;
+        }
+        li.slick-active button:before{
+            font-size:15px;
+            color:rgb(66, 190, 231);        
+          }
+        }
+}
+
+

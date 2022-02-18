@@ -1,0 +1,7 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+svg {
+    width: em(100);
+    height: em(50);
+}

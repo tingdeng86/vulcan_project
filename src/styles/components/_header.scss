@@ -6,6 +6,8 @@ header {
     padding: em(15) em(30);
     @include flex-layout-row;
     align-items: center;
+    z-index: 30;
+    opacity: .5;
 
     h1 {
         @include flatten;

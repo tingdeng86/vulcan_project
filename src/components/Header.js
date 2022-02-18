@@ -1,9 +1,10 @@
 import Hamburger from './Hamburger';
+import Icon from './Icon';
 
 function Header() {
     return (
         <header>
-          <h1><a href="/">React with Sass</a></h1>
+            <Icon></Icon>
           <Hamburger />
         </header>
       )

@@ -3,7 +3,7 @@
 
 header {
     background-color: $brand-color;
-    padding: em(15) em(30);
+    padding: em(8) em(15);
     @include flex-layout-row;
     align-items: center;
     z-index: 30;

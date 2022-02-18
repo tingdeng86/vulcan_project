@@ -7,9 +7,13 @@ function Nav() {
     return (
         <nav onClick={closeNav}>
           <ul>
-              <a>Home</a>
-              <a>About</a>
-              <a>Contact</a>
+              <a href="/">ABOUT</a>
+              <a href="/">PRODUCTS</a>
+              <a href="/">SERVICES</a>
+              <a href="/">PARTS</a>
+              <a href="/">NEWS</a>
+              <a href="/">INSTALLATION MAP</a>
+              <a href="/">PRODUCT LITERATURE</a>
           </ul>
         </nav>
       )

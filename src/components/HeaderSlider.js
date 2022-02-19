@@ -3,7 +3,8 @@ import Slider from "react-slick";
 import slider01 from '../images/header-slider-img-01.jpg';
 import slider02 from '../images/header-slider-img-02.jpg';
 import slider03 from '../images/header-slider-img-03.jpg';
-import wave from '../images/wave-white.png'
+import wave from '../images/wave-white.png';
+import Wave from './Wave';
 
 
 function HeaderSlider() {
@@ -19,39 +20,41 @@ function HeaderSlider() {
   };
 
   return (
-    <div className="slider-container">
+    <section className="slider-container">
       <Slider {...settings} className="slider">
         <div className="image-container">
           <img src={slider01} alt="" />
           <div className="text-container">
-            <h2>We design and fabricate indestructible wastewater screens.</h2>
-            <h2>Enough said.</h2>
-            <a href="/">VIEW PRODUCTS</a>
-            <a href="/">VIEW SERVICES</a>
+            <h2>We design and fabricate indestructible wastewater screens. Enough said.</h2>
+            <div className="link-container">
+              <a href="/">VIEW PRODUCTS</a>
+              <a href="/">VIEW SERVICES</a>
+            </div>
           </div>
         </div>
         <div className="image-container">
           <img src={slider02} alt="" />
           <div className="text-container">
-            <h2>We design and fabricate indestructible wastewater screens.Enough said.</h2>
-            <a href="/">VIEW PRODUCTS</a>
-            <a href="/">VIEW SERVICES</a>
+            <h2>We design and fabricate indestructible wastewater screens. Enough said.</h2>
+            <div className="link-container">
+              <a href="/">VIEW PRODUCTS</a>
+              <a href="/">VIEW SERVICES</a>
+            </div>
           </div>
         </div>
         <div className="image-container">
           <img src={slider03} alt="" />
           <div className="text-container">
-            <h2>We design and fabricate indestructible wastewater screens.</h2>
-            <h2>Enough said.</h2>
-            <a href="/">VIEW PRODUCTS</a>
-            <a href="/">VIEW SERVICES</a>
+            <h2>We design and fabricate indestructible wastewater screens. Enough said.</h2>
+            <div className="link-container">
+              <a href="/">VIEW PRODUCTS</a>
+              <a href="/">VIEW SERVICES</a>
+            </div>
           </div>
         </div>
       </Slider>
-        <div className="wave-container">
-          <img src={wave} alt="White wave" />
-      </div>
-    </div>
+      <Wave source={wave} description="White wave"/>
+    </section>
   )
 }
 

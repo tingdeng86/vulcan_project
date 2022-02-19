@@ -5,6 +5,7 @@ import slider02 from '../images/header-slider-img-02.jpg';
 import slider03 from '../images/header-slider-img-03.jpg';
 import wave from '../images/wave-white.png'
 
+
 function HeaderSlider() {
   var settings = {
     dots: true,

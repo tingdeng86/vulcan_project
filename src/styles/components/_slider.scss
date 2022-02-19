@@ -13,7 +13,7 @@
     }
     .slick-dots{
         position: absolute;
-        bottom: em(50);
+        bottom: em(100);
         display: block;
         width: 100%;
         padding: 10;
@@ -37,7 +37,7 @@
         bottom: 0;
         img{
             object-fit: cover;
-            object-position: 100% 0%;
+            // min-width: 900px;
 
         }
     

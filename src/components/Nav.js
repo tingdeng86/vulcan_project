@@ -12,6 +12,7 @@ function Nav() {
               <a href="/">SERVICES</a>
               <a href="/">PARTS</a>
               <a href="/">NEWS</a>
+              <a href="/">CONTACT</a>
               <a href="/">INSTALLATION MAP</a>
               <a href="/">PRODUCT LITERATURE</a>
           </ul>

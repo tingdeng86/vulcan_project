@@ -24,7 +24,7 @@ function Gallery() {
                         srcSet={`${screeningSmall} 300w, ${screeningMedium} 768w, ${screeningLarge} 1280w`}
                         sizes='calc(100vw - 10px)' />
                     <h3>Screening</h3>
-                    <a href="">View Selection</a>
+                    <a href="/">View Selection</a>
 
                 </div>
                 <div className='image-container'>
@@ -32,21 +32,21 @@ function Gallery() {
                         srcSet={`${handlingSmall} 300w, ${handlingMedium} 768w, ${handlingLarge} 1280w`}
                         sizes='calc(100vw - 10px)' />
                     <h3>Screenings Handling</h3>
-                    <a href="">View Selection</a>
+                    <a href="/">View Selection</a>
                 </div>
                 <div className='image-container'>
                     <img src={gritSmall} alt="Vulcan grit handling"
                         srcSet={`${gritSmall} 300w, ${gritMedium} 768w, ${gritLarge} 1280w`}
                         sizes='calc(100vw - 10px)' />
                     <h3>Grit Handling</h3>
-                    <a href="">View Selection</a>
+                    <a href="/">View Selection</a>
                 </div>
                 <div className='image-container'>
                     <img src={sludgeSmall} alt="Vulcan sludge thickening"
                         srcSet={`${sludgeSmall} 300w, ${sludgeMedium} 768w, ${sludgeLarge} 1280w`}
                         sizes='calc(100vw - 10px)' />
                     <h3>Sludge Thickening</h3>
-                    <a href="">View Selection</a>
+                    <a href="/">View Selection</a>
 
                 </div>
             </div>

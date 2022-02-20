@@ -50,22 +50,19 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            padding: 0 em(15);
+            padding: 0;
             .image-container{
-                padding:0 em(4);
+                padding:0;
                 border-bottom: none;
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: 2fr 1fr 1fr;
+                grid-template-rows: 1.8fr 1fr 1fr;
                 align-items: flex-start;
                 gap:0;
                     h3{
                         color: $text-color-blue;
                         font-size: 1.4em;
-                        text-align: center;
-                        // margin: 0;
-                        // padding: 0;
-                        
+                        text-align: center;                       
                     }
                     a{
                         margin: 0;
@@ -73,6 +70,13 @@
                         text-align: center;                      
                     }               
             }
+        }
+    }
+    @include mq($tabletLandscape){
+        .image-gallery .image-container{
+            display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 2fr 0.5fr 0.5fr;
         }
     }
 }

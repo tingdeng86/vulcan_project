@@ -5,7 +5,7 @@ import Gallery from "./components/Gallery";
 
 function App() {
   return (
-    <div className="wrapper">
+    <div id="wr" className="wrapper">
       <Header></Header>
       <Nav></Nav>
       <HeaderSlider/>

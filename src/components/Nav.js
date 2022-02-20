@@ -5,7 +5,7 @@ function Nav() {
     }
 
     return (
-        <nav onClick={closeNav}>
+        <nav id="nav-id" onClick={closeNav}>
           <ul>
               <a href="/">ABOUT</a>
               <a href="/">PRODUCTS</a>

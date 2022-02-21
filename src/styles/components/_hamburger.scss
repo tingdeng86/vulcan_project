@@ -20,7 +20,7 @@
     }
 
     .bar {
-        $transition: all 0.5s ease-in-out;
+        $transition: all 0.5s;
         $bar-height: 4px;
         @mixin bar($pos-neg: '') {
             content: "";

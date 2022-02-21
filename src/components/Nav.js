@@ -2,7 +2,6 @@ function Nav() {
 
     function closeNav(){
         document.body.classList.toggle('show');
-        document.body.classList.add('hide');
     }
 
     return (

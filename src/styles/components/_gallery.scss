@@ -46,11 +46,14 @@
             }
     }
     @include mq($tabletPortrait){
+        p{
+            padding: 0 20%;
+        }
         .image-gallery{
             display: flex;
             flex-direction: row;
             justify-content: center;
-            padding: 0;
+            padding:0 em(30);
             .image-container{
                 padding:0;
                 border-bottom: none;

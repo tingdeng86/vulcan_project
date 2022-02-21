@@ -5,24 +5,31 @@ nav {
     // locally scoped variable
     //$height: 40px;
     $border: 1px solid white;
-    $transition: all 0.3s ease-in-out, visibility 2s;
+    $transition: max-height 0.5s ease-in-out;
 
-    background-color: rgba(58, 58, 58, 0.5);
-    display: none;
-
+    background-color: $brand-color;
     z-index: 30;
-    width: 100%;
+    width: 100%;   
     max-height: 0;
-
+    position: absolute;
+    overflow: hidden;
+    transition: $transition;
+    top: em(66);
     .show & {
         display: block;
         top: em(66);
         position: absolute;
+        overflow: hidden;
         transition: $transition;
         max-height: em(400);
-        visibility: visible;
+        z-index: 30;
     }
 
+    & .activated {
+        transition: $transition;
+        overflow: hidden;
+        z-index: 30;
+    }
     ul {
         @include flatten(true);
     }
@@ -46,7 +53,6 @@ nav {
     @include mq($phoneLandscape) {
     
         display: block;
-        border-top: $border;
 
         ul {
             display: none;

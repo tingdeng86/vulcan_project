@@ -4,6 +4,7 @@ function Hamburger() {
 
     function openNav(){
         document.body.classList.toggle('show');
+        document.getElementById('nav-id').classList.add('activated');
     }
 
     function preventFocus(e){
@@ -13,6 +14,7 @@ function Hamburger() {
     function isDesktop(e) {
         if(e.matches){
             document.body.classList.remove('show');
+            document.getElementById('nav-id').classList.remove('activated');
         }
     }
 

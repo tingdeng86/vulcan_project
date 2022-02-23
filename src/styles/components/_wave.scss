@@ -1,0 +1,16 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.wave-container{
+    position: absolute;
+    bottom: -20px;
+    width: 150%;
+    overflow: hidden;
+    img{
+        object-fit: cover;
+    }
+    @include mq($phoneLandscape){
+        width: 100%;        
+    }
+
+}

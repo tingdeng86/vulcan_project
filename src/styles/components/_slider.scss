@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     position: relative;
+    margin-bottom: em(40);
     .image-container img{
         object-fit: cover;
         width: 100%;
@@ -13,7 +14,7 @@
     }
     .slick-dots{
         position: absolute;
-        bottom: em(60);
+        bottom: em(70);
         display: block;
         width: 100%;
         margin: 0;
@@ -31,21 +32,17 @@
             color:$text-color-blue;        
         }
         @include mq($phoneLandscape){
+            bottom: em(80);
             li button:before{
                 font-size:15px;
             }
         }
         @include mq($tabletLandscape){
-            bottom: em(120);
+            bottom: em(100);
         } 
         
     }
-    .wave-container{
-        position: absolute;
-        bottom: 0;
-        img{
-            object-fit: cover;
-        }
+    
     
     
 }
@@ -63,7 +60,7 @@
             padding: 0;
             text-align: center;
             color: white;           
-            margin-bottom: em(20); 
+            margin-bottom: em(10); 
             font-weight: 600;
             text-transform: uppercase;;
             font-size: 2.2em;
@@ -78,7 +75,7 @@
                 background-color: transparent;
                 border: 1px solid white;
                 color: white;
-                margin-top:em(20);
+                margin-top:em(10);
                 text-decoration: none; 
                 text-transform: uppercase;; 
             }
@@ -87,6 +84,9 @@
         @include mq($phoneLandscape){
             width: 80%;
             margin:0 10%;
+            h2{
+                margin-bottom: em(30);
+            }
             .link-container{
                 display: flex;
                 flex-direction: row;
@@ -109,4 +109,3 @@
 
 
 
-}

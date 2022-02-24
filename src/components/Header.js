@@ -5,7 +5,7 @@ function Header() {
 
     return (
         <header>
-            <Icon></Icon>
+            <Icon className="logo"/>
           <Hamburger />
         </header>
       )

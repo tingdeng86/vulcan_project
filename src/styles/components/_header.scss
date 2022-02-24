@@ -23,4 +23,8 @@ header {
         @include plain-link;
     }
 
+    @include mq($phoneLandscape) {
+        background-color: transparent;
+        margin: 0 auto;
+    }
 }

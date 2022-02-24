@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0 em(15);
     margin-top: em(85);
+    
     h2{
         margin: 0;
         text-align: center;          
@@ -28,8 +29,11 @@
             grid-template-columns: 2fr 1fr;
             gap:em(10);
             align-items: center;
-            padding-bottom: em(10);
+            padding-bottom: em(20);
             padding-top: em(10);
+            &:last-child {
+                border-bottom: none;
+            }
             img{
                 object-fit: cover;
                 width: 100%;
@@ -38,15 +42,17 @@
             }  
             h3{
                 // text-align: center;          
-                font-weight: 500;
+                font-weight: 700;
                 text-transform: uppercase;;
-                font-size: 1.3em;
+                font-size: 1.2em;
             }
             a{
                 display: none;
+                color:$text-color-grey;
             }
     }
-    @include mq($tabletPortrait){
+    @include mq($phoneLandscape){
+        margin-top: em(30);
         p{
             padding: 0 20%;
         }
@@ -65,8 +71,9 @@
                 gap:0;
                     h3{
                         color: $text-color-blue;
-                        font-size: 1.4em;
-                        text-align: center;                       
+                        font-size: 1.5em;
+                        text-align: center; 
+                        padding: 0 20%;                   
                     }
                     a{
                         margin: 0;
@@ -76,11 +83,11 @@
             }
         }
     }
-    @include mq($tabletLandscape){
-        .image-gallery .image-container{
-            display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 2fr 0.5fr 0.5fr;
-        }
-    }
+    // @include mq($tabletLandscape){
+    //     .image-gallery .image-container{
+    //         display: grid;
+    //             grid-template-columns: 1fr;
+    //             grid-template-rows: 2fr 0.8fr 0.8fr;
+    //     }
+    // }
 }

@@ -6,8 +6,9 @@ $body-bg-color: white;
 $wrapper-bg-color: white;
 // Text Colors
 $text-color-dark: black;
+$text-color-grey: rgb(82, 79, 79);
 $text-color-light: white;
-$text-color-blue: rgb(113, 171, 223);
+$text-color-blue: #009DDC;
 
 // Use Color functions to brighten and darken colors
 $brand-color-dark: darken($brand-color, 20);

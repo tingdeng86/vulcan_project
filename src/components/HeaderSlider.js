@@ -53,7 +53,7 @@ function HeaderSlider() {
           </div>
         </div>
       </Slider>
-      <Wave source={wave} description="White wave"/>
+      <Wave source={wave} description="White wave" />
     </section>
   )
 }

@@ -2,6 +2,7 @@ import HeaderSlider from "./components/HeaderSlider";
 import Nav from "./components/Nav";
 import Header from "./components/Header";
 import Gallery from "./components/Gallery";
+import Video from "./components/Video";
 
 function App() {
   function closeNav(e) {
@@ -16,6 +17,7 @@ function App() {
       <Nav></Nav>
       <HeaderSlider/>
       <Gallery />
+      <Video />
     </div>
   );
 }

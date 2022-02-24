@@ -1,0 +1,28 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.video-container{
+    background-color: $text-color-blue;
+    margin: 0 auto;
+    padding:em(60);
+    .embeded-container{
+        background-color:#154a66 ;
+        padding: em(15);
+        margin: 0 auto;
+        iframe{
+            padding: 0;
+            margin: 0;
+            background-color: green;
+            aspect-ratio: 16 / 9;
+            width: 100%;
+            display: block;
+        }
+    }
+    @include mq($phoneLandscape){
+        .embeded-container{
+            max-width: em(740);
+        }
+        
+    }
+
+}

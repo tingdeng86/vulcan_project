@@ -123,6 +123,14 @@
                     flex-direction: row;
                     justify-content: space-around;
                     text-align: right;
+
+                    i {
+                        background-color: white;
+                        color: black;
+
+                        border-radius: 25px;
+                        margin-right: em(5);
+                    }
                     svg {
                         height: 100px;
                         width: 100px;

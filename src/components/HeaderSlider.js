@@ -6,7 +6,7 @@ import slider03 from '../images/header-slider-img-03.jpg';
 import wave from '../images/wave-white.png';
 import Wave from './Wave';
 import Icon from './Icon';
-
+import '../styles/fontello.css'
 
 function HeaderSlider() {
   var settings = {
@@ -35,8 +35,8 @@ function HeaderSlider() {
               </div>
               <div className="info-right">
                 <ul>
-                  <li><a href="/">+1 712-642-2755</a></li>
-                  <li><a href="/">Contact us</a></li>
+                  <li><a href="/"><i class="icon-phone"></i> +1 712-642-2755</a></li>
+                  <li><a href="/"><i class="icon-mail"></i> Contact us</a></li>
                 </ul>
               </div>
             </div>
@@ -72,8 +72,8 @@ function HeaderSlider() {
               </div>
               <div className="info-right">
                 <ul>
-                  <li><a href="/">+1 712-642-2755</a></li>
-                  <li><a href="/">Contact us</a></li>
+                  <li><a href="/"><i class="icon-phone"></i> +1 712-642-2755</a></li>
+                  <li><a href="/"><i class="icon-mail"></i> Contact us</a></li>
                 </ul>
               </div>
             </div>
@@ -109,8 +109,8 @@ function HeaderSlider() {
               </div>
               <div className="info-right">
                 <ul>
-                  <li><a href="/"> +1 712-642-2755</a></li>
-                  <li><a href="/">Contact us</a></li>
+                  <li><a href="/"><i class="icon-phone"></i> +1 712-642-2755</a></li>
+                  <li><a href="/"><i class="icon-mail"></i> Contact us</a></li>
                 </ul>
               </div>
             </div>

@@ -77,8 +77,12 @@
                 color: white;
                 margin-top:em(10);
                 text-decoration: none; 
-                text-transform: uppercase;; 
-            }
+                text-transform: uppercase;
+                #{$lps} {
+                    background-color: white;
+                    color:$text-color-blue;
+                }
+            }           
                     
         }
         @include mq($phoneLandscape){

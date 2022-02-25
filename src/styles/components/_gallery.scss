@@ -47,6 +47,10 @@
                 font-weight: 700;
                 text-transform: uppercase;;
                 font-size: 1.2em;
+                color:$text-color-grey;;
+                #{$lps} {
+                    color:$text-color-blue;
+                }
             }
             a{
                 display: none;
@@ -76,7 +80,10 @@
                         color: $text-color-blue;
                         font-size: 1.5em;
                         text-align: center; 
-                        padding: 0 20%;                   
+                        padding: 0 20%; 
+                        #{$lps} {
+                            color:$text-color-grey;
+                        }                 
                     }
                     a{
                         margin: 0;

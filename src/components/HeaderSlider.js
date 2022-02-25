@@ -7,6 +7,7 @@ import wave from '../images/wave-white.png';
 import Wave from './Wave';
 import Icon from './Icon';
 
+
 function HeaderSlider() {
   var settings = {
     dots: true,
@@ -25,7 +26,7 @@ function HeaderSlider() {
         <div className="image-container">
           <img src={slider01} alt="" />
           <div className="header-container">
-          <div className="info-bar">
+            <div className="info-bar">
               <div className="info-left">
                 <ul>
                   <li><a href="/">Install Map</a></li>
@@ -42,12 +43,12 @@ function HeaderSlider() {
             <Icon/>
             <div className="nav-tablet-desktop">
               <ul>
-                <li><a href="/">ABOUT</a></li>
-                <li><a href="/">PRODUCTS</a></li>
-                <li><a href="/">SERVICES</a></li>
-                <li><a href="/">PARTS</a></li>
-                <li><a href="/">NEWS</a></li>
-                <li><a href="/">CONTACT</a></li>
+                <a href="/">ABOUT</a>
+                <a href="/">PRODUCTS</a>
+                <a href="/">SERVICES</a>
+                <a href="/">PARTS</a>
+                <a href="/">NEWS</a>
+                <a href="/">CONTACT</a>
               </ul>
             </div>
           </div>
@@ -62,7 +63,7 @@ function HeaderSlider() {
         <div className="image-container">
           <img src={slider02} alt="" />
           <div className="header-container">
-          <div className="info-bar">
+            <div className="info-bar">
               <div className="info-left">
                 <ul>
                   <li><a href="/">Install Map</a></li>
@@ -108,7 +109,7 @@ function HeaderSlider() {
               </div>
               <div className="info-right">
                 <ul>
-                  <li><a href="/">+1 712-642-2755</a></li>
+                  <li><a href="/"> +1 712-642-2755</a></li>
                   <li><a href="/">Contact us</a></li>
                 </ul>
               </div>

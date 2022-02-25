@@ -58,7 +58,35 @@
             display: block;
             position: absolute;
             top: 0;
-            
+            .nav-tablet-desktop{
+                margin-top: em(-45);
+                text-align: center;
+
+                ul {
+                    @include flatten(true);
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-wrap: wrap;
+
+                    a {
+                        display: block;
+                        line-height: 40px;
+                        padding: em(15) em(50);
+                        color: $text-color-light;
+                        line-height: 1.5em;
+                        font-size: .8em;
+                        text-decoration: none;
+                        outline: none;
+                        font-weight: 100;
+                        background-color: $brand-color;
+                        &:hover {
+                            background-color: rgb(113, 171, 223)
+                        }
+                
+                    }
+                }
+            }
             .info-bar {
                 padding-top: em(15);
                 text-align: center;
@@ -72,21 +100,16 @@
 
                     ul {
                         @include flatten(true);
-                        // display: flex;
-                        // flex-direction: row;
-                        // justify-content:flex-end;
-                        // flex-wrap: wrap;
-                        
                     }
     
                     li {
                         display: inline-block;
-                    }
-                    a {
-                        display: block;
-                        color: $text-color-light;
-                        text-decoration: none;
-                        outline: none;
+                        a {
+                            display: block;
+                            color: $text-color-light;
+                            text-decoration: none;
+                            outline: none;
+                        }
                     }
 
                     li:last-child {
@@ -100,7 +123,10 @@
                     flex-direction: row;
                     justify-content: space-around;
                     text-align: right;
-
+                    svg {
+                        height: 100px;
+                        width: 100px;
+                    }
                     ul {
                         @include flatten(true);
                         // display: flex;
@@ -125,38 +151,7 @@
                     }
                 }
             }
-    
-            .nav-tablet-desktop {
-                margin-top: em(-45);
-                text-align: center;
 
-                ul {
-                    @include flatten(true);
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                }
-
-                a {
-                    display: block;
-                    line-height: 40px;
-                    padding: em(15) em(40);
-                    color: $text-color-light;
-                    line-height: 1.5em;
-                    font-size: .8em;
-                    text-decoration: none;
-                    outline: none;
-                    font-weight: 100;
-                    background-color: $brand-color;
-                    #{$lps} {
-                        background-color: rgb(113, 171, 223)
-                    }
-            
-                }
-
-
-            }
             svg {
                 height: em(200);
                 width: em(175);

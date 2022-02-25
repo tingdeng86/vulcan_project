@@ -7,7 +7,7 @@ import Video from "./components/Video";
 function App() {
   function closeNav(e) {
     if(e.target.tagName !== "HEADER" && e.target.tagName !== "SPAN" && document.body.className === "vsc-initialized show") {
-      console.log(e.target.tagName);
+      //console.log(e.target.tagName);
       document.body.classList.remove('show');
     }
   }

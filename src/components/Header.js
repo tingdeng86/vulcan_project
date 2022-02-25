@@ -4,8 +4,8 @@ import Icon from './Icon';
 function Header() {
 
     return (
-        <header>
-            <Icon className="logo"/>
+        <header className='header-phone' >
+            <Icon className="icon-phone"/>
           <Hamburger />
         </header>
       )

@@ -15,6 +15,7 @@ nav {
     overflow: hidden;
     transition: $transition;
     top: em(66);
+    
     .show & {
         display: block;
         top: em(66);
@@ -49,26 +50,10 @@ nav {
 
     }
 
-    @include mq($phoneLandscape) {
-    
+    @include mq($tabletPortrait) {
         display: block;
-
         ul {
             display: none;
         }
-
-        li {
-            flex: 1;
-        }
-
-        a {
-            //line-height: $height;
-            @at-root nav li:last-child a {
-                border-right: none;
-            }
-        }
-        
     }
-
-
 }

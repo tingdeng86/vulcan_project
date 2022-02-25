@@ -5,6 +5,7 @@
     margin: 0;
     position: relative;
     margin-bottom: em(40);
+
     .image-container img{
         object-fit: cover;
         width: 100%;
@@ -48,12 +49,130 @@
 }
 .image-container{
     position: relative;
+    font-family: $heading-font;
+    .header-container {
+        display: none;
+        @include mq($tabletPortrait) {
+            text-transform: uppercase;
+            width: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            
+            .info-bar {
+                padding-top: em(15);
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                .info-left {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+
+                    ul {
+                        @include flatten(true);
+                        // display: flex;
+                        // flex-direction: row;
+                        // justify-content:flex-end;
+                        // flex-wrap: wrap;
+                        
+                    }
+    
+                    li {
+                        display: inline-block;
+                    }
+                    a {
+                        display: block;
+                        color: $text-color-light;
+                        text-decoration: none;
+                        outline: none;
+                    }
+
+                    li:last-child {
+                        padding-left: em(20);
+                    }
+                }
+    
+                .info-right {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    text-align: right;
+
+                    ul {
+                        @include flatten(true);
+                        // display: flex;
+                        // flex-direction: row;
+                        // justify-content:flex-end;
+                        // flex-wrap: wrap;
+                        
+                    }
+    
+                    li {
+                        display: inline-block;
+                    }
+                    a {
+                        display: block;
+                        color: $text-color-light;
+                        text-decoration: none;
+                        outline: none;
+                    }
+
+                    li:first-child {
+                        padding-right: em(20);
+                    }
+                }
+            }
+    
+            .nav-tablet-desktop {
+                margin-top: em(-45);
+                text-align: center;
+
+                ul {
+                    @include flatten(true);
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+
+                a {
+                    display: block;
+                    line-height: 40px;
+                    padding: em(15) em(40);
+                    color: $text-color-light;
+                    line-height: 1.5em;
+                    font-size: .8em;
+                    text-decoration: none;
+                    outline: none;
+                    font-weight: 100;
+                    background-color: $brand-color;
+                    #{$lps} {
+                        background-color: rgb(113, 171, 223)
+                    }
+            
+                }
+
+
+            }
+            svg {
+                height: em(200);
+                width: em(175);
+                display: block;
+                margin: 0 auto;
+                margin-top: em(-60);
+            }
+        }
+    }
+
     .text-container{
         padding: 0;
         margin: 0 em(34);
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-60%);
         
         h2{
             margin:0;

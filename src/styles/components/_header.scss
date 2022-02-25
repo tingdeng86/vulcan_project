@@ -1,7 +1,7 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
-header {
+.header-phone {
     background-color: $brand-color;
     padding: em(8) em(15);
     @include flex-layout-row;
@@ -23,8 +23,17 @@ header {
         @include plain-link;
     }
 
-    @include mq($phoneLandscape) {
+    svg {
+        height: em(50);
+        width: em(100);
+    }
+
+    @include mq($tabletPortrait) {
         background-color: transparent;
         margin: 0 auto;
+
+        svg {
+            display: none;
+        }
     }
 }

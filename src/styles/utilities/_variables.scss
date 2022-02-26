@@ -9,6 +9,7 @@ $text-color-dark: black;
 $text-color-grey: rgb(82, 79, 79);
 $text-color-light: white;
 $text-color-blue: #009DDC;
+$text-color-dark-blue: darken($text-color-blue, 20);;
 
 // Use Color functions to brighten and darken colors
 $brand-color-dark: darken($brand-color, 20);

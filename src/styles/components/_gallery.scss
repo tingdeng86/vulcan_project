@@ -10,10 +10,11 @@
     h2{
         margin: 0;
         text-align: center;          
-        font-weight: 600;
+        font-weight: 700;
         text-transform: uppercase;;
-        font-size: 2em;
+        font-size: 1.6em;
         padding: 0 25%;
+        color: text-color-grey;
         font-family: $heading-font;
     }
     p{
@@ -47,7 +48,7 @@
                 font-weight: 700;
                 text-transform: uppercase;;
                 font-size: 1.2em;
-                color:$text-color-grey;;
+                color:$text-color-grey;
                 #{$lps} {
                     color:$text-color-blue;
                 }
@@ -58,7 +59,10 @@
             }
     }
     @include mq($phoneLandscape){
-        margin-top: em(30);
+        margin-top: em(40);
+        h2{
+            color: $text-color-dark-blue;
+        }
         p{
             padding: 0 20%;
         }
@@ -72,10 +76,10 @@
                 border-bottom: none;
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: 1.8fr 1fr 1fr;
+                grid-template-rows: 1.8fr 100px 120px;
                 align-items: flex-start;
                 margin-bottom: em(20);
-                gap:0;
+                gap:em(6);
                     h3{
                         color: $text-color-blue;
                         font-size: 1.5em;
@@ -93,13 +97,11 @@
             }
         }
     }
-    // @include mq($tabletLandscape){
-    //     .image-gallery .image-container{
-    //         display: grid;
-    //             grid-template-columns: 1fr;
-    //             grid-template-rows: 2fr 0.8fr 0.8fr;
-    //     }
-    // }
+    @include mq($tabletLandscape){
+        .image-gallery {
+            padding: 0 em(40);
+        }
+    }
 }
 
 .wave-dark-container{

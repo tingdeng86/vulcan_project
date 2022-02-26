@@ -45,7 +45,7 @@ function Gallery() {
                 <div className='image-container'>
                     <img src={sludgeSmall} alt="Vulcan sludge thickening"
                         srcSet={`${sludgeSmall} 300w, ${sludgeMedium} 768w, ${sludgeLarge} 1280w`}
-                        sizes='calc(100vw - 10px)' />
+                        sizes='(max-width: 912px) 100vw, 912px' />
                     <h3>Sludge Thickening</h3>
                     <a href="/">View Selection</a>
                 </div>

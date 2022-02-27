@@ -8,26 +8,38 @@ function ProductAdvisor() {
         <hr />
         <div className='dropdowns'>
           <form action="submit">
-            <label htmlFor="">Product Type</label>
-            <select className="first-select" name="" id="">
-              <option value="" disabled selected>Select</option>
-            </select>
-            <label htmlFor="">Screen Location</label>
-            <select name="" id="">
-              <option value="" disabled selected>Select</option>
-            </select>
-            <label htmlFor="">Flow Type</label>
-            <select name="" id="">
-              <option value="" disabled selected>Select</option>
-            </select>
-            <label htmlFor="">Channel Depth</label>
-            <select name="" id="">
-              <option value="" disabled selected>Select</option>
-            </select>
-            <label htmlFor="">Channel Width</label>
-            <select name="" id="">
-              <option value="" disabled selected>Select</option>
-            </select>
+          <div className='grid-dropdowns'>
+              <div className='cell'>
+                <label htmlFor="">Product Type</label>
+                <select className="first-select" name="" id="">
+                  <option value="" disabled selected>Select</option>
+                </select>
+              </div>
+              <div className='cell'>
+                <label htmlFor="">Screen Location</label>
+                <select name="" id="">
+                  <option value="" disabled selected>Select</option>
+                </select>
+              </div>
+              <div className='cell'>
+                <label htmlFor="">Flow Type</label>
+                <select name="" id="">
+                  <option value="" disabled selected>Select</option>
+                </select>
+              </div>
+              <div className='cell'>
+                <label htmlFor="">Channel Depth</label>
+                <select name="" id="">
+                  <option value="" disabled selected>Select</option>
+                </select>
+              </div>
+              <div className='cell'>
+              <label htmlFor="">Channel Width</label>
+              <select className="last-select" name="" id="">
+                <option value="" disabled selected>Select</option>
+              </select>
+              </div>
+            </div>
             <button>Find my product</button>
           </form>
         </div>

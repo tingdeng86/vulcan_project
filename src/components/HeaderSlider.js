@@ -24,7 +24,44 @@ function HeaderSlider() {
     <section className="slider-container">
       <Slider {...settings} className="slider">
         <div className="image-container">
-          <img src={slider01} alt="" />
+          <img src={slider01} alt="Whole structure of vulcan" />
+          <div className="header-container">
+            <div className="info-bar">
+              <div className="info-left">
+                <ul>
+                  <li><a href="/">Install Map</a></li>
+                  <li><a href="/">Product Literature</a></li>
+                </ul>
+              </div>
+              <div className="info-right">
+                <ul>
+                  <li><a href="/"><i className="icon-phone"></i> +1 712-642-2755</a></li>
+                  <li><a href="/"><i className="icon-mail"></i> Contact us</a></li>
+                </ul>
+              </div>
+            </div>
+            <Icon/>
+            <div className="nav-tablet-desktop">
+              <ul>
+                <a href="/">ABOUT</a>
+                <a href="/">PRODUCTS</a>
+                <a href="/">SERVICES</a>
+                <a href="/">PARTS</a>
+                <a href="/">NEWS</a>
+                <a href="/">CONTACT</a>
+              </ul>
+            </div>
+          </div>
+          <div className="text-container">
+            <h2 className="h2-test">We design and fabricate indestructible wastewater screens. Enough said.</h2>
+            <div className="link-container">
+              <a className="test" href="/">VIEW PRODUCTS</a>
+              <a  className="test" href="/">VIEW SERVICES</a>
+            </div>
+          </div>
+        </div>
+        <div className="image-container">
+          <img src={slider02} alt="One worker making vulcan" />
           <div className="header-container">
             <div className="info-bar">
               <div className="info-left">
@@ -61,44 +98,7 @@ function HeaderSlider() {
           </div>
         </div>
         <div className="image-container">
-          <img src={slider02} alt="" />
-          <div className="header-container">
-            <div className="info-bar">
-              <div className="info-left">
-                <ul>
-                  <li><a href="/">Install Map</a></li>
-                  <li><a href="/">Product Literature</a></li>
-                </ul>
-              </div>
-              <div className="info-right">
-                <ul>
-                  <li><a href="/"><i className="icon-phone"></i> +1 712-642-2755</a></li>
-                  <li><a href="/"><i className="icon-mail"></i> Contact us</a></li>
-                </ul>
-              </div>
-            </div>
-            <Icon/>
-            <div className="nav-tablet-desktop">
-              <ul>
-                <a href="/">ABOUT</a>
-                <a href="/">PRODUCTS</a>
-                <a href="/">SERVICES</a>
-                <a href="/">PARTS</a>
-                <a href="/">NEWS</a>
-                <a href="/">CONTACT</a>
-              </ul>
-            </div>
-          </div>
-          <div className="text-container">
-            <h2>We design and fabricate indestructible wastewater screens. Enough said.</h2>
-            <div className="link-container">
-              <a href="/">VIEW PRODUCTS</a>
-              <a href="/">VIEW SERVICES</a>
-            </div>
-          </div>
-        </div>
-        <div className="image-container">
-          <img src={slider03} alt="" />
+          <img src={slider03} alt="Two enginners making some parts of vulcan" />
           <div className="header-container">
             <div className="info-bar">
               <div className="info-left">

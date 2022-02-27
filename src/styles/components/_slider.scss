@@ -5,6 +5,7 @@
     margin: 0;
     position: relative;
     margin-bottom: em(40);
+    z-index: 1;
 
     .image-container img{
         object-fit: cover;
@@ -47,6 +48,9 @@
     
     
 }
+.slick-active{
+    z-index: 9;
+}
 .image-container{
     position: relative;
     font-family: $heading-font;
@@ -81,9 +85,8 @@
                         font-weight: 100;
                         background-color: $brand-color;
                         &:hover {
-                            background-color: rgb(113, 171, 223)
+                            background-color: $text-color-blue
                         }
-                
                     }
                 }
             }
@@ -188,6 +191,8 @@
             font-size: 1.8em;
         }
         .link-container{
+            z-index:999;
+            position: relative;
             margin:0;
             padding:0;
             width: 100%;
@@ -203,6 +208,7 @@
                 #{$lps} {
                     background-color: white;
                     color:$text-color-blue;
+
                 }
             }           
                     
@@ -232,6 +238,4 @@
        
     }
 }
-
-
 

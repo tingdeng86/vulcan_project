@@ -26,6 +26,10 @@
         text-transform: uppercase;
         width: 95%;
         cursor: pointer;
+
+        &:hover {
+            background-color: #555;
+        }
     }
     .grid-dropdowns {
         display: grid;

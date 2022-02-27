@@ -311,6 +311,9 @@
                 font-size: 2.5em;
             }
             transform: translateY(-20%);
+            .link-container {
+                margin-top: -50px;
+            }
         }
 
         // @include mq(em(1600)) {

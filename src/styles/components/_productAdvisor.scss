@@ -2,8 +2,66 @@
 @use '../utilities/mixins' as *;
 
 .product-advisor {
-    background-color: rgb(39, 72, 101);
+    background-color: rgba(21,74,102,255);
     color: white;
     text-align: center;
-    text-transform: uppercase;
+    width: 100%;
+    hr {
+        margin-left: em(10);
+        margin-right: em(10);
+    }
+
+    h2 {
+        text-transform: uppercase;
+        margin-bottom: em(-10);
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+
+            label {
+                text-align: left;
+                margin-left: em(10);
+                margin-top: em(10);
+                text-transform: none;
+                font-family: $heading-font;
+            }
+            select {
+                margin: em(5) em(10);
+                padding: em(15) em(5);
+                background-color: darkgray;
+                font-size: .9em;
+
+            }
+
+        .first-select {
+            background-color: white;
+        }
+
+        button {
+            padding:em(15) em(8);  
+            background-color: $text-color-blue;
+            border: none; 
+            font-size: 1em;
+            color: white;
+            margin: em(40) em(10);
+            text-decoration: none; 
+            text-transform: uppercase;
+        }
+    }
+
+    @include mq($phonePortrait) {
+        form {
+            display: grid;
+            grid
+
+            label {
+                text-align: left;
+            }
+            // select {
+            //     width: 100%;
+            // }
+        }
+    }
 }

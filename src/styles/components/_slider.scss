@@ -168,6 +168,74 @@
                 margin-top: em(-60);
             }
         }
+
+        @include mq($tabletLandscape) {
+            svg {
+                height: em(240);
+                width: em(220);
+                display: block;
+                margin: 0 auto;
+                margin-top: em(-60);
+            }
+
+            .info-left {
+                width: 30%;
+
+            }
+
+            .info-right {
+                width: 30%;
+
+            }
+
+            .nav-tablet-desktop {
+                margin-top: em(-60);
+                ul {
+                    a {
+                        padding: em(10) em(40);
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+        @include mq($desktopMedium) {
+
+            .info-left {
+                width: 10%;
+
+            }
+
+            .info-right {
+                width: 10%;
+
+            }
+
+            .nav-tablet-desktop {
+                margin-top: em(-35);
+                ul {
+                    a {
+                        padding: em(25) em(50);
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+        @include mq(em(1600)) {
+            .header-container {
+                width: 100vw;
+            }
+            .info-left {
+                width: 50%;
+
+            }
+
+            .info-right {
+                width: 50%;
+
+            }
+        }
     }
 
     .text-container{
@@ -175,7 +243,7 @@
         margin: 0 em(34);
         position: absolute;
         top: 50%;
-        transform: translateY(-60%);
+        transform: translateY(-50%);
         
         h2{
             margin:0;
@@ -184,7 +252,7 @@
             color: white;           
             margin-bottom: em(10); 
             font-weight: 700;
-            text-transform: uppercase;;
+            text-transform: uppercase;
             font-size: 1.8em;
         }
         .link-container{
@@ -203,7 +271,13 @@
             }
                     
         }
+
+        @include mq($phonePortrait) {
+            transform: translateY(-70%);
+        }
+
         @include mq($phoneLandscape){
+            transform: translateY(-60%);
             width: 80%;
             margin:0 10%;
             h2{
@@ -219,13 +293,30 @@
           }
 
         }  
+
         @include mq($tabletLandscape){
+            transform: translateY(-50%);
             width: 50%;
             margin:0 25%;
             padding:0;
 
         }
        
+        @include mq($desktopMedium) {
+            h2 {
+                font-size: 2.5em;
+            }
+            transform: translateY(-20%);
+        }
+
+        // @include mq(em(1600)) {
+        //     h2 {
+        //         font-size: 3.5em;
+        //     }
+        //     .link-container {
+        //         margin-top: em(-100);
+        //     }
+        // }
     }
 }
 

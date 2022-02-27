@@ -1,0 +1,9 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.product-advisor {
+    background-color: rgb(39, 72, 101);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}

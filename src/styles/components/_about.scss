@@ -1,0 +1,58 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.about-container{
+    width: 100%;
+    min-height:500px;
+    background-image: url('../../images/bg-section-about-us.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+    .text-container{
+        padding: em(20);
+        @include flex-center;
+        flex-direction: column;
+        h2{
+            margin:0;
+            padding: 0;
+            padding-top: em(40);
+            // padding: em(20);
+            text-align: center;
+            color:$text-color-light ;          
+            margin-bottom: em(10); 
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 2.25em;
+            max-width: 650px;
+        }
+        p{
+            text-align: center;
+            color:$text-color-light ;          
+            margin-bottom: em(30); 
+            font-weight: 400;
+            padding: 0 10%;
+            text-transform: uppercase;
+            font-size: 0.875em;
+            max-width: 600px;
+        }
+        a{
+            padding:em(10) em(14) ; 
+            margin: 0 auto;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            margin-top:em(10);
+            font-weight: 700;
+            text-decoration: none; 
+            text-transform: uppercase;
+            #{$lps} {
+                background-color: white;
+                color:$text-color-blue;
+            }
+        }
+    }
+    
+
+}

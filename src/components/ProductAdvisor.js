@@ -12,7 +12,7 @@ function ProductAdvisor() {
               <div className='cell'>
                 <label htmlFor="">Product Type</label>
                 <select className="first-select" name="" id="">
-                  <option value="" disabled selected>Select</option>
+                  <option value="Select" disabled selected>Select</option>
                 </select>
               </div>
               <div className='cell'>

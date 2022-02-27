@@ -53,10 +53,10 @@ function HeaderSlider() {
             </div>
           </div>
           <div className="text-container">
-            <h2 className="h2-test">We design and fabricate indestructible wastewater screens. Enough said.</h2>
+            <h2 >We design and fabricate indestructible wastewater screens. Enough said.</h2>
             <div className="link-container">
-              <a className="test" href="/">VIEW PRODUCTS</a>
-              <a  className="test" href="/">VIEW SERVICES</a>
+              <a  href="/">VIEW PRODUCTS</a>
+              <a  href="/">VIEW SERVICES</a>
             </div>
           </div>
         </div>

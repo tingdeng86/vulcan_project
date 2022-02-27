@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Gallery from "./components/Gallery";
 import Video from "./components/Video";
 import ProductAdvisor from "./components/ProductAdvisor";
+import About from "./components/About";
 
 function App() {
   function closeNav(e) {
@@ -19,6 +20,7 @@ function App() {
       <HeaderSlider/>
       <Gallery />
       <ProductAdvisor/>
+      <About/>
       <Video />
     </div>
   );

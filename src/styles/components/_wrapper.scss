@@ -2,7 +2,8 @@
 @use '../utilities/mixins' as *;
 
 .wrapper {
-    // max-width: 860px;
+    width: 100%;
+    overflow: hidden;
     @include mc;
     background-color: $wrapper-bg-color;
 }

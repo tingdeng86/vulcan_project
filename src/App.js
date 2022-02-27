@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import Header from "./components/Header";
 import Gallery from "./components/Gallery";
 import Video from "./components/Video";
+import ProductAdvisor from "./components/ProductAdvisor";
 
 function App() {
   function closeNav(e) {
@@ -17,6 +18,7 @@ function App() {
       <Nav></Nav>
       <HeaderSlider/>
       <Gallery />
+      <ProductAdvisor/>
       <Video />
     </div>
   );

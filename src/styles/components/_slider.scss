@@ -11,11 +11,11 @@
         width: 100%;
         height: 100%;
         display: block;    
-        height: 80vh;       
+        min-height: 650px;     
     }
     .slick-dots{
         position: absolute;
-        bottom: em(70);
+        bottom: em(90);
         display: block;
         width: 100%;
         margin: 0;
@@ -33,14 +33,14 @@
             color:$text-color-blue;        
         }
         @include mq($phoneLandscape){
-            bottom: em(80);
+            bottom: em(100);
             li button:before{
                 font-size:15px;
             }
         }
-        @include mq($tabletLandscape){
-            bottom: em(100);
-        } 
+        // @include mq($tabletLandscape){
+        //     bottom: em(100);
+        // } 
         
     }
     
@@ -267,8 +267,12 @@
                 color: white;
                 margin-top:em(10);
                 text-decoration: none; 
-                text-transform: uppercase;; 
-            }
+                text-transform: uppercase;
+                #{$lps} {
+                    background-color: white;
+                    color:$text-color-blue;
+                }
+            }           
                     
         }
 

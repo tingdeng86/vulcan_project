@@ -35,8 +35,8 @@ function HeaderSlider() {
               </div>
               <div className="info-right">
                 <ul>
-                  <li><a href="/"><i class="icon-phone"></i> +1 712-642-2755</a></li>
-                  <li><a href="/"><i class="icon-mail"></i> Contact us</a></li>
+                  <li><a href="/"><i className="icon-phone"></i> +1 712-642-2755</a></li>
+                  <li><a href="/"><i className="icon-mail"></i> Contact us</a></li>
                 </ul>
               </div>
             </div>
@@ -72,8 +72,8 @@ function HeaderSlider() {
               </div>
               <div className="info-right">
                 <ul>
-                  <li><a href="/"><i class="icon-phone"></i> +1 712-642-2755</a></li>
-                  <li><a href="/"><i class="icon-mail"></i> Contact us</a></li>
+                  <li><a href="/"><i className="icon-phone"></i> +1 712-642-2755</a></li>
+                  <li><a href="/"><i className="icon-mail"></i> Contact us</a></li>
                 </ul>
               </div>
             </div>
@@ -109,8 +109,8 @@ function HeaderSlider() {
               </div>
               <div className="info-right">
                 <ul>
-                  <li><a href="/"><i class="icon-phone"></i> +1 712-642-2755</a></li>
-                  <li><a href="/"><i class="icon-mail"></i> Contact us</a></li>
+                  <li><a href="/"><i className="icon-phone"></i> +1 712-642-2755</a></li>
+                  <li><a href="/"><i className="icon-mail"></i> Contact us</a></li>
                 </ul>
               </div>
             </div>
@@ -135,7 +135,7 @@ function HeaderSlider() {
           </div>
         </div>
       </Slider>
-      <Wave source={wave} description="White wave"/>
+      <Wave source={wave} description="White wave" />
     </section>
   )
 }

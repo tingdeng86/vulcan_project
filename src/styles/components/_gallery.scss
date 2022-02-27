@@ -3,16 +3,18 @@
 
 .gallery-container{
     padding: 0;
-    margin: 0 em(15);
+    // margin: 0 em(15);
     margin-top: em(85);
     
+    position: relative;
     h2{
         margin: 0;
         text-align: center;          
-        font-weight: 600;
+        font-weight: 700;
         text-transform: uppercase;;
-        font-size: 2em;
+        font-size: 1.6em;
         padding: 0 25%;
+        color: text-color-grey;
         font-family: $heading-font;
     }
     p{
@@ -27,12 +29,13 @@
             border-bottom: 1px solid rgb(165, 163, 163);
             display: grid;
             grid-template-columns: 2fr 1fr;
-            gap:em(10);
+            gap:em(16);
             align-items: center;
             padding-bottom: em(20);
             padding-top: em(10);
             &:last-child {
                 border-bottom: none;
+                margin-bottom: em(150);
             }
             img{
                 object-fit: cover;
@@ -45,6 +48,10 @@
                 font-weight: 700;
                 text-transform: uppercase;;
                 font-size: 1.2em;
+                color:$text-color-grey;
+                #{$lps} {
+                    color:$text-color-blue;
+                }
             }
             a{
                 display: none;
@@ -52,7 +59,10 @@
             }
     }
     @include mq($phoneLandscape){
-        margin-top: em(30);
+        margin-top: em(40);
+        h2{
+            color: $text-color-dark-blue;
+        }
         p{
             padding: 0 20%;
         }
@@ -66,28 +76,56 @@
                 border-bottom: none;
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: 1.8fr 1fr 1fr;
+                grid-template-rows: 1.8fr 100px 120px;
                 align-items: flex-start;
-                gap:0;
+                margin-bottom: em(20);
+                gap:em(6);
                     h3{
                         color: $text-color-blue;
                         font-size: 1.5em;
                         text-align: center; 
-                        padding: 0 20%;                   
+                        padding: 0 20%; 
+                        #{$lps} {
+                            color:$text-color-grey;
+                        }                 
                     }
                     a{
                         margin: 0;
                         display: block; 
                         text-align: center;                      
-                    }               
+                    }            
             }
         }
     }
-    // @include mq($tabletLandscape){
-    //     .image-gallery .image-container{
-    //         display: grid;
-    //             grid-template-columns: 1fr;
-    //             grid-template-rows: 2fr 0.8fr 0.8fr;
-    //     }
-    // }
+    @include mq($tabletLandscape){
+        .image-gallery {
+            padding: 0 em(40);
+        }
+    }
+}
+
+.wave-dark-container{
+    position: absolute;
+    bottom: -150px;
+    left: -60px;
+    width: 150%;
+    height: 150px;
+    overflow: hidden;
+
+    img{
+        max-width: initial;
+        width: 170%;
+        height: 100%;
+    }
+    @include mq($phoneLandscape){
+        left:0;
+        bottom: -20px;
+        width: 100%;
+        height: 100px;
+        img{
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+        }       
+    }
 }

@@ -5,6 +5,7 @@ import Gallery from "./components/Gallery";
 import Video from "./components/Video";
 import ProductAdvisor from "./components/ProductAdvisor";
 import About from "./components/About";
+import Info from "./components/Info";
 
 function App() {
   function closeNav(e) {
@@ -15,13 +16,14 @@ function App() {
   }
   return (
     <div id="wr" className="wrapper" onClick={e => closeNav(e)}>
-      <Header></Header>
-      <Nav></Nav>
+      <Header/>
+      <Nav/>
       <HeaderSlider/>
       <Gallery />
       <ProductAdvisor/>
       <About/>
       <Video />
+      <Info/>
     </div>
   );
 }

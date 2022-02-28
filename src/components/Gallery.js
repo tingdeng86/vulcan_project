@@ -13,7 +13,6 @@ import gritLarge from '../images/machine-03-912x834.png';
 import sludgeLarge from '../images/machine-04-912x834.png';
 import waveDark from '../images/wave-blue-dark.png';
 // import Wave from './Wave';
-import ProductAdvisor from './ProductAdvisor';
 
 function Gallery() {
     return (

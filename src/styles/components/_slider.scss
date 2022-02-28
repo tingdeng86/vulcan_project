@@ -53,7 +53,7 @@
 }
 .image-container{
     position: relative;
-    font-family: $heading-font;
+    font-family: $body-font;
     .header-container {
         display: none;
         @include mq($tabletPortrait) {

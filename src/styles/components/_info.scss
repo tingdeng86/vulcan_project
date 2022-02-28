@@ -99,8 +99,11 @@
         text-transform: uppercase;
         justify-content: center;
         padding-top: em(40);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
         h2 {
-            font-size: 2em;
+            font-size: 2.1em;
         }
         a{
             padding:em(10) em(14) ; 
@@ -123,7 +126,7 @@
         grid-template-areas:
         "a a"
         "b c";
-
+        grid-template-columns: 1fr 1fr;
         .newsletter-signup {
             grid-area: a;
             padding: em(20);
@@ -181,6 +184,19 @@
         }
     }
 
+    @include mq($tabletLandscape) {
+        .contact {
+            h2 {
+                font-size: 2.5em;
+            }
+        }
+
+        .find-install {
+            h2 {
+                font-size: 2.5em;
+            }
+        }
+    }
     @include mq($desktopMedium) {
         .newsletter-signup {
             form {
@@ -192,7 +208,7 @@
 
                     .input-container {
                         input {
-                            width: em(400);
+                            width: em(500);
                             margin-top: em(2);
                         }
                     }

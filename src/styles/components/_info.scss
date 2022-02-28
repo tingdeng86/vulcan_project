@@ -142,6 +142,7 @@
                         input {
                             font-size: 1em;
                             width: em(300);
+                            padding: em(7) em(15);
                         }
                         
                         button {
@@ -177,6 +178,47 @@
                 color: white;
                 border: none;
             }
+        }
+    }
+
+    @include mq($desktopMedium) {
+        .newsletter-signup {
+            form {
+                .form-container {
+                    label {
+                        padding-top: em(0);
+                        font-size: 1.7em;
+                    }
+
+                    .input-container {
+                        input {
+                            width: em(400);
+                            margin-top: em(2);
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact {
+            height: 500px;
+            h2 {
+                font-size: 2.7em;
+                padding-bottom: em(15);
+            }
+
+            a {
+                padding: em(10) em(40);
+            }
+        }
+
+        .find-install {
+            height: 500px;
+            h2 {
+                font-size: 2.7em;
+                padding-bottom: em(20);
+            }
+
         }
     }
 }

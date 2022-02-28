@@ -2,9 +2,52 @@
 @use '../utilities/mixins' as *;
 
 footer {
-    padding: em(30);
-    border-top: 1px dotted $body-bg-color;
-    p {
-        @include flatten;
+    color: white;
+    padding: em(20) em(30);
+    text-transform: uppercase;
+    background-color: $text-color-blue;
+    text-align: center;
+    font-size: .8em;
+    margin: 0 auto;
+    .footer-container {
+        svg {
+            height: em(50);
+            width: em(120);
+        }
+        p {
+            @include flatten;
+        }
+    
+        .footer-links {
+            ul {
+                @include flatten;
+                display: flex;
+                flex-direction: row;
+    
+                li {
+                    list-style-type: none;
+                    padding: em(10);
+                    a {
+                        text-decoration: none;
+                        color: white;
+    
+                        .facebook {
+                            width: 2em;
+                        }
+                        .linkedin {
+                            width: 2em;
+                        }
+                        i {
+                            background-color: white;
+                            color: $text-color-blue;
+                
+                            border-radius: 25px;
+                            margin-right: em(5);
+                        }
+                    }
+                }
+            }
+        }
     }
+
 }

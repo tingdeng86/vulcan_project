@@ -6,6 +6,7 @@ import Video from "./components/Video";
 import ProductAdvisor from "./components/ProductAdvisor";
 import About from "./components/About";
 import Info from "./components/Info";
+import Footer from "./components/Footer";
 
 function App() {
   function closeNav(e) {
@@ -24,6 +25,7 @@ function App() {
       <About/>
       <Video />
       <Info/>
+      <Footer/>
     </div>
   );
 }

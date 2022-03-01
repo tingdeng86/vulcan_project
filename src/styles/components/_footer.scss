@@ -6,36 +6,41 @@ footer {
     padding: em(20) em(30);
     text-transform: uppercase;
     background-color: $text-color-blue;
-    text-align: center;
-    font-size: .8em;
-    margin: 0 auto;
+    font-size: .85em;
+    font-family: $heading-font;
     .footer-container {
-        svg {
-            height: em(50);
-            width: em(120);
+
+        .icon-container {
+            text-align: center;
+            svg {
+                height: em(50);
+                width: em(120);
+                margin-bottom: em(20);
+            }
         }
-        p {
-            @include flatten;
-        }
-    
+
         .footer-links {
             ul {
                 @include flatten;
                 display: flex;
                 flex-direction: row;
-    
+                flex-wrap: wrap;
+                justify-content: center;
                 li {
                     list-style-type: none;
                     padding: em(10);
                     a {
+                        white-space: nowrap;
                         text-decoration: none;
                         color: white;
     
                         .facebook {
-                            width: 2em;
+                            width: 1.8em;
+                            margin-top: em(-7);
                         }
                         .linkedin {
-                            width: 2em;
+                            width: 1.8em;
+                            margin-top: em(-8);
                         }
                         i {
                             background-color: white;
@@ -44,10 +49,57 @@ footer {
                             border-radius: 25px;
                             margin-right: em(5);
                         }
+                        .icon-phone {
+                            margin-left: em(15);
+                        }
                     }
+
                 }
+                
+            }
+        }
+    }
+    @include mq($tabletPortrait) {
+        .footer-container {
+            display: grid;
+            grid-template-columns: .5fr 1fr;
+            .icon-container {
+                svg {
+                    height: em(80);
+                    width: em(300);
+                    margin-bottom: em(-30);
+                }
+            }
+
+            .footer-links {
+                margin-top: em(30);
+            }
+        }
+
+    }
+
+    @include mq($tabletLandscape) {
+        .footer-container {
+            height: em(110);
+            .icon-container {
+                svg {
+                    height: em(100);
+                    width: em(300);
+                }
+            }
+            .footer-links {
+                margin-top: em(60);
             }
         }
     }
 
+    @include mq($tabletLandscape) {
+        .footer-container {
+
+            .icon-container {
+                padding-left: em(300);
+            }
+
+        }
+    }
 }

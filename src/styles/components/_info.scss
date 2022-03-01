@@ -68,7 +68,7 @@
         justify-content: center;
         color: #555;
         text-transform: uppercase;
-
+        padding-top: em(20);
         h2 {
             font-size: 2.1em;
             line-height: 1em;
@@ -218,6 +218,7 @@
 
         .contact {
             height: 500px;
+            padding-left: em(300);
             h2 {
                 font-size: 2.7em;
                 padding-bottom: em(15);
@@ -229,9 +230,10 @@
         }
 
         .find-install {
+            padding-right: em(400);
             height: 500px;
             h2 {
-                font-size: 2.7em;
+                font-size: 2.8em;
                 padding-bottom: em(20);
             }
 

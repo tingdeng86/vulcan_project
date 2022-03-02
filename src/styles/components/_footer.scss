@@ -3,7 +3,8 @@
 
 footer {
     color: white;
-    padding: em(20) em(30);
+    padding: em(10) em(30);
+    padding-bottom: em(30);
     text-transform: uppercase;
     background-color: $text-color-blue;
     font-size: .85em;
@@ -59,7 +60,8 @@ footer {
             }
         }
     }
-    @include mq($tabletPortrait) {
+    @include mq($phoneLandscape) {
+        padding-top: 0;
         .footer-container {
             display: grid;
             grid-template-columns: .5fr 1fr;

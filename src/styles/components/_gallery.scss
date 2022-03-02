@@ -5,7 +5,7 @@
     padding: 0;
     // margin: 0 em(15);
     margin-top: em(85);
-    
+    margin-bottom: em(40);
     position: relative;
     h2{
         margin: 0;
@@ -36,7 +36,7 @@
             padding-top: em(10);
             &:last-child {
                 border-bottom: none;
-                margin-bottom: em(150);
+                padding-bottom: em(100);
             }
             img{
                 object-fit: cover;
@@ -61,6 +61,7 @@
     }
     @include mq($phoneLandscape){
         margin-top: em(40);
+        margin-bottom: em(20);
         h2{
             color: $text-color-dark-blue;
         }
@@ -99,6 +100,7 @@
         }
     }
     @include mq($tabletLandscape){
+        margin-bottom: em(10);
         .image-gallery {
             padding: 0 em(40);
         }
@@ -107,7 +109,7 @@
 
 .wave-dark-container{
     position: absolute;
-    bottom: -150px;
+    bottom: -85px;
     left: -60px;
     width: 150%;
     height: 150px;

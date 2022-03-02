@@ -1,4 +1,5 @@
 import React from 'react'
+import waveLight from '../images/wave-blue-light.png';
 
 function Info() {
   return (
@@ -22,6 +23,9 @@ function Info() {
             <h2>Ready to spec vulcan <br /> for your project?</h2>
             <a href="/">Contact us</a>
         </div>
+        <div className="wave-dark-container">
+                <img src={waveLight} alt="Light blue wave" />
+            </div>
     </div>
   )
 }

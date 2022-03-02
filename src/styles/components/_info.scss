@@ -2,8 +2,9 @@
 @use '../utilities/mixins' as *;
 
 .info-wrapper {
-
+    position: relative;
     display: grid;
+    margin-bottom: em(75);
     grid-template-areas:
     "a"
     "b"
@@ -99,6 +100,7 @@
         text-transform: uppercase;
         justify-content: center;
         padding-top: em(40);
+        padding-bottom: em(100);
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -122,7 +124,8 @@
         }
     }
 
-    @include mq($tabletPortrait) {
+    @include mq($phoneLandscape) {
+        margin-bottom: em(20);
         grid-template-areas:
         "a a"
         "b c";
@@ -159,6 +162,8 @@
 
         .contact {
             grid-area: b;
+            // padding-bottom: em(100);
+            margin-bottom: em(40);
             a {
                 background-color: $text-color-blue;
                 color: white;
@@ -185,6 +190,8 @@
     }
 
     @include mq($tabletLandscape) {
+        margin-bottom: em(10);
+
         .contact {
             h2 {
                 font-size: 2.5em;
@@ -246,5 +253,32 @@
         .find-install {
             padding-right: em(400);
         }
+    }
+}
+.wave-dark-container{
+    position: absolute;
+    bottom: -85px;
+    left: -60px;
+    width: 150%;
+    height: 150px;
+    overflow: hidden;
+    img{
+        max-width: initial;
+        width: 170%;
+        height: 100%;
+    }
+    @include mq($phoneLandscape){
+        left:0;
+        bottom: -20px;
+        width: 100%;
+        height: 100px;
+        img{
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+        }       
+    }
+    @include mq($tabletLandscape){
+        bottom: -10px;
     }
 }

@@ -2,6 +2,8 @@
 @use '../utilities/mixins' as *;
 
 .product-advisor {
+    // margin-top: em(80);
+    padding-top: em(20);
     background-color: rgba(21,74,102,255);
     color: white;
     text-align: center;
@@ -61,6 +63,7 @@
     }
 
     @include mq($tabletPortrait) {
+        padding-top: em(10);
         .grid-dropdowns {
             display: grid;
             grid-template-columns: 1fr 1fr;

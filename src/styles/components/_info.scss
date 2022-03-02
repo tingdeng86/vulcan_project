@@ -71,9 +71,11 @@
         text-transform: uppercase;
         padding-top: em(20);
         h2 {
+            margin: 0;
+            padding: 0;
             font-size: 2.1em;
             line-height: 1em;
-            margin-bottom: 0;
+            margin-bottom: em(10);
         }
         a{
             padding:em(10) em(14) ; 
@@ -81,7 +83,6 @@
             background-color: transparent;
             border: 1px solid #555;
             color: #555;
-            margin-top:em(10);
             font-weight: 700;
             text-decoration: none; 
             #{$lps} {
@@ -99,11 +100,10 @@
         text-align: center;
         text-transform: uppercase;
         justify-content: center;
-        padding-top: em(40);
-        padding-bottom: em(100);
-            display: flex;
-            align-items: center;
-            flex-direction: column;
+        padding: em(100) em(10);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         h2 {
             font-size: 2.1em;
         }
@@ -162,7 +162,6 @@
 
         .contact {
             grid-area: b;
-            // padding-bottom: em(100);
             margin-bottom: em(40);
             a {
                 background-color: $text-color-blue;
@@ -238,7 +237,7 @@
         .find-install {
             height: 500px;
             h2 {
-                font-size: 2.8em;
+                font-size: 2.7em;
                 padding-bottom: em(20);
             }
 

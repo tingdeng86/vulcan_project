@@ -10,7 +10,8 @@ import Footer from "./components/Footer";
 
 function App() {
   function closeNav(e) {
-    if(e.target.tagName !== "HEADER" && e.target.tagName !== "SPAN" && document.body.className === "vsc-initialized show") {
+    e.preventDefault()
+    if(e.target.tagName !== "HEADER" && e.target.tagName !== "SPAN" && document.body.className !== "vsc-initialized") {
       //console.log(e.target.tagName);
       document.body.classList.remove('show');
     }

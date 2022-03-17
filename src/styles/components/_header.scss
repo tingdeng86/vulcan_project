@@ -31,7 +31,6 @@
     @include mq($tabletPortrait) {
         background-color: transparent;
         margin: 0 auto;
-
         svg {
             display: none;
         }

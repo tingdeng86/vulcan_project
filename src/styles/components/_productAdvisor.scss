@@ -2,7 +2,6 @@
 @use '../utilities/mixins' as *;
 
 .product-advisor {
-    // margin-top: em(80);
     padding-top: em(20);
     background-color: rgba(21,74,102,255);
     color: white;
@@ -91,7 +90,6 @@
                 margin-right: em(-20);
                 width: 90%;
             }
-
         }
         button {
             width: 98%;

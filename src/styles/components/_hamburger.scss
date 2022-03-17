@@ -2,14 +2,12 @@
 @use "../utilities/mixins" as *;
 
 .hamburger {
-
     display: block;
     width: 40px;
     background-color: transparent;
     border: none;
     padding: 0;
     cursor: pointer;
-
     .hamburger-content {
         display: block;
         height: 24px;

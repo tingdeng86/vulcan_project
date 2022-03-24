@@ -37,6 +37,7 @@
                 border-bottom: none;
                 padding-bottom: em(100);
             }
+            
             img{
                 object-fit: cover;
                 width: 100%;
@@ -81,6 +82,7 @@
                 align-items: flex-start;
                 margin-bottom: em(20);
                 gap:em(6);
+                
                     h3{
                         color: $text-color-blue;
                         font-size: 1.5em;
@@ -102,6 +104,12 @@
         margin-bottom: em(10);
         .image-gallery {
             padding: 0 em(40);
+            .image-box{
+                height: 250px;
+                img{
+                    display: block; 
+                } 
+            }
         }
     }
 }

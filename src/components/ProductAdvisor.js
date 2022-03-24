@@ -16,26 +16,26 @@ function ProductAdvisor() {
               </select>
             </div>
             <div className='cell'>
-              <label htmlFor="">Screen Location</label>
-              <select name="" id="" defaultValue={'Default'} >
+              <label htmlFor="location">Screen Location</label>
+              <select name="location" id="location" defaultValue={'Default'} >
                 <option value="Default" disabled >Select</option>
               </select>
             </div>
             <div className='cell'>
-              <label htmlFor="">Flow Type</label>
-              <select name="" id="" defaultValue={'Default'}>
+              <label htmlFor="flow">Flow Type</label>
+              <select name="flow" id="flow" defaultValue={'Default'}>
                 <option value="Default" disabled >Select</option>
               </select>
             </div>
             <div className='cell'>
-              <label htmlFor="">Channel Depth</label>
-              <select name="" id="" defaultValue={'Default'}>
+              <label htmlFor="channel-depth">Channel Depth</label>
+              <select name="channel-depth" id="channel-depth" defaultValue={'Default'}>
                 <option value="Default" disabled >Select</option>
               </select>
             </div>
             <div className='cell'>
-              <label htmlFor="">Channel Width</label>
-              <select className="last-select" name="" id="" defaultValue={'Default'}>
+              <label htmlFor="channel-width">Channel Width</label>
+              <select className="last-select" name="channel-width" id="channel-width" defaultValue={'Default'}>
                 <option value='Default' disabled >Select</option>
               </select>
             </div>

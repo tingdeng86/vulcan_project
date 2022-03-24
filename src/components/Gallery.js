@@ -21,31 +21,39 @@ function Gallery() {
             <p>Just as no two treatment plants are the same, no two of our screening, grit handling or sludge thickening products are either. We’ll help determine exactly what you need.</p>
             <div className='image-gallery'>
                 <div className='image-container'>
-                    <img src={screeningSmall}
-                        alt="Vulcan screening"
-                        srcSet={`${screeningSmall} 300w, ${screeningMedium} 768w, ${screeningLarge} 1280w`}
-                        sizes='calc(100vw - 10px)' />
+                    <div className="image-box">
+                        <img src={screeningSmall}
+                            alt="Vulcan screening"
+                            srcSet={`${screeningSmall} 300w, ${screeningMedium} 768w, ${screeningLarge} 912w`}
+                            sizes='calc(100vw - 10px)' />
+                    </div>
                     <h3>Screening</h3>
                     <a href="/">View Selection</a>
                 </div>
                 <div className='image-container'>
-                    <img src={handlingSmall} alt="Vulcan screenings handling"
-                        srcSet={`${handlingSmall} 300w, ${handlingMedium} 768w, ${handlingLarge} 1280w`}
-                        sizes='calc(100vw - 10px)' />
+                    <div className="image-box">
+                        <img src={handlingSmall} alt="Vulcan screenings handling"
+                            srcSet={`${handlingSmall} 300w, ${handlingMedium} 768w, ${handlingLarge} 912w`}
+                            sizes='calc(100vw - 10px)' />
+                    </div>
                     <h3>Screenings Handling</h3>
                     <a href="/">View Selection</a>
                 </div>
                 <div className='image-container'>
-                    <img src={gritSmall} alt="Vulcan grit handling"
-                        srcSet={`${gritSmall} 300w, ${gritMedium} 768w, ${gritLarge} 1280w`}
-                        sizes='calc(100vw - 10px)' />
+                    <div className="image-box">
+                        <img src={gritSmall} alt="Vulcan grit handling"
+                            srcSet={`${gritSmall} 300w, ${gritMedium} 768w, ${gritLarge} 912w`}
+                            sizes='calc(100vw - 10px)' />
+                    </div>
                     <h3>Grit Handling</h3>
                     <a href="/">View Selection</a>
                 </div>
                 <div className='image-container'>
-                    <img src={sludgeSmall} alt="Vulcan sludge thickening"
-                        srcSet={`${sludgeSmall} 300w, ${sludgeMedium} 768w, ${sludgeLarge} 1280w`}
-                        sizes='(max-width: 912px) 100vw, 912px' />
+                    <div className="image-box">
+                        <img src={sludgeSmall} alt="Vulcan sludge thickening"
+                            srcSet={`${sludgeSmall} 300w, ${sludgeMedium} 768w, ${sludgeLarge} 912w`}
+                            sizes='(max-width: 912px) 100vw, 912px' />
+                    </div>
                     <h3>Sludge Thickening</h3>
                     <a href="/">View Selection</a>
                 </div>

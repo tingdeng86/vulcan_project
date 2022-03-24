@@ -27,30 +27,30 @@ function HeaderSlider() {
           <img src={slider01} alt="Whole structure of vulcan" />
           <div className="header-container">
             <div className="info-bar">
-              <div className="info-left">
+              <nav className="info-left">
                 <ul>
                   <li><a href="/">Install Map</a></li>
                   <li><a href="/">Product Literature</a></li>
                 </ul>
-              </div>
-              <div className="info-right">
+              </nav>
+              <nav className="info-right">
                 <ul>
                   <li><a href="/"><i className="icon-phone"></i> +1 712-642-2755</a></li>
                   <li><a href="/"><i className="icon-mail"></i> Contact us</a></li>
                 </ul>
-              </div>
+              </nav>
             </div>
             <Icon/>
-            <div className="nav-tablet-desktop">
+            <nav className="nav-tablet-desktop">
               <ul>
-                <a href="/">ABOUT</a>
-                <a href="/">PRODUCTS</a>
-                <a href="/">SERVICES</a>
-                <a href="/">PARTS</a>
-                <a href="/">NEWS</a>
-                <a href="/">CONTACT</a>
+                <li><a href="/">ABOUT</a></li>
+                <li><a href="/">PRODUCTS</a></li>
+                <li><a href="/">SERVICES</a></li>
+                <li><a href="/">PARTS</a></li>
+                <li><a href="/">NEWS</a></li>
+                <li><a href="/">CONTACT</a></li>
               </ul>
-            </div>
+            </nav>
           </div>
           <div className="text-container">
             <h2 >We design and fabricate indestructible wastewater screens. Enough said.</h2>
@@ -64,30 +64,30 @@ function HeaderSlider() {
           <img src={slider02} alt="One worker making vulcan" />
           <div className="header-container">
             <div className="info-bar">
-              <div className="info-left">
+            <nav className="info-left">
                 <ul>
                   <li><a href="/">Install Map</a></li>
                   <li><a href="/">Product Literature</a></li>
                 </ul>
-              </div>
-              <div className="info-right">
+              </nav>
+              <nav className="info-right">
                 <ul>
                   <li><a href="/"><i className="icon-phone"></i> +1 712-642-2755</a></li>
                   <li><a href="/"><i className="icon-mail"></i> Contact us</a></li>
                 </ul>
-              </div>
+              </nav>
             </div>
             <Icon/>
-            <div className="nav-tablet-desktop">
+            <nav className="nav-tablet-desktop">
               <ul>
-                <a href="/">ABOUT</a>
-                <a href="/">PRODUCTS</a>
-                <a href="/">SERVICES</a>
-                <a href="/">PARTS</a>
-                <a href="/">NEWS</a>
-                <a href="/">CONTACT</a>
+                <li><a href="/">ABOUT</a></li>
+                <li><a href="/">PRODUCTS</a></li>
+                <li><a href="/">SERVICES</a></li>
+                <li><a href="/">PARTS</a></li>
+                <li><a href="/">NEWS</a></li>
+                <li><a href="/">CONTACT</a></li>
               </ul>
-            </div>
+            </nav>
           </div>
           <div className="text-container">
             <h2>We design and fabricate indestructible wastewater screens. Enough said.</h2>
@@ -101,30 +101,30 @@ function HeaderSlider() {
           <img src={slider03} alt="Two enginners making some parts of vulcan" />
           <div className="header-container">
             <div className="info-bar">
-              <div className="info-left">
+            <nav className="info-left">
                 <ul>
                   <li><a href="/">Install Map</a></li>
                   <li><a href="/">Product Literature</a></li>
                 </ul>
-              </div>
-              <div className="info-right">
+              </nav>
+              <nav className="info-right">
                 <ul>
                   <li><a href="/"><i className="icon-phone"></i> +1 712-642-2755</a></li>
                   <li><a href="/"><i className="icon-mail"></i> Contact us</a></li>
                 </ul>
-              </div>
+              </nav>
             </div>
             <Icon/>
-            <div className="nav-tablet-desktop">
+            <nav className="nav-tablet-desktop">
               <ul>
-                <a href="/">ABOUT</a>
-                <a href="/">PRODUCTS</a>
-                <a href="/">SERVICES</a>
-                <a href="/">PARTS</a>
-                <a href="/">NEWS</a>
-                <a href="/">CONTACT</a>
+                <li><a href="/">ABOUT</a></li>
+                <li><a href="/">PRODUCTS</a></li>
+                <li><a href="/">SERVICES</a></li>
+                <li><a href="/">PARTS</a></li>
+                <li><a href="/">NEWS</a></li>
+                <li><a href="/">CONTACT</a></li>
               </ul>
-            </div>
+            </nav>
           </div>
           <div className="text-container">
             <h2>We design and fabricate indestructible wastewater screens. Enough said.</h2>

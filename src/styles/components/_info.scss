@@ -244,13 +244,13 @@
         }
     }
 
-    @include mq(1700px) {
-        .contact {
-            padding-left: em(300);
-        }
+    // @include mq(1700px) {
+    //     .contact {
+    //         padding-left: em(300);
+    //     }
 
-        .find-install {
-            padding-right: em(400);
-        }
-    }
+    //     .find-install {
+    //         padding-right: em(400);
+    //     }
+    // }
 }
